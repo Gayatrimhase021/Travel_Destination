@@ -2,6 +2,7 @@ import express from "express";
 import cors from "cors";
 import mongoose from "mongoose";
 import dotenv from "dotenv";
+import userRoutes from "./routes/user.js";
 
 dotenv.config();
 
@@ -16,6 +17,8 @@ app.get("/", (req, res) => {
     message: "TravelDestination API is running"
   });
 });
+
+app.use("/api/user", userRoutes);
 
 const PORT = process.env.PORT || 5000;
 
