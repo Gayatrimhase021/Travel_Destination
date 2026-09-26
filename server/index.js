@@ -2,7 +2,10 @@ import express from "express";
 import cors from "cors";
 import mongoose from "mongoose";
 import dotenv from "dotenv";
+
 import userRoutes from "./routes/user.js";
+import destinationRoutes from "./routes/destination.js";
+import tourRoutes from "./routes/tour.js";
 
 dotenv.config();
 
@@ -19,6 +22,8 @@ app.get("/", (req, res) => {
 });
 
 app.use("/api/user", userRoutes);
+app.use("/api/destinations", destinationRoutes);
+app.use("/api/tours", tourRoutes);
 
 const PORT = process.env.PORT || 5000;
 
