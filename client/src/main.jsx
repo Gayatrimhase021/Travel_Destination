@@ -13,6 +13,7 @@ import TourDetails from "./views/TourDetails";
 import Booking from "./views/Booking";
 import MyBookings from "./views/MyBookings";
 import Contact from "./views/Contact";
+import About from "./views/About";
 
 import "./index.css";
 
@@ -66,6 +67,11 @@ ReactDOM.createRoot(document.getElementById("root")).render(
         <Route
           path="/signup"
           element={<Signup />}
+        />
+
+        <Route
+        path="/about"
+        element={<About />}
         />
 
       </Routes>

@@ -73,13 +73,14 @@ const Contact = () => {
       <main className="contact-page">
 
         {/* HERO */}
-
         <section className="contact-hero">
           <div className="contact-hero-overlay"></div>
 
           <div className="contact-hero-content">
             <span>GET IN TOUCH</span>
+
             <h1>Contact Us</h1>
+
             <p>
               Have questions about your trip?
               We are here to help you.
@@ -87,10 +88,10 @@ const Contact = () => {
           </div>
         </section>
 
-        {/* CONTACT CONTENT */}
-
+        {/* CONTACT SECTION */}
         <section className="contact-section">
 
+          {/* LEFT SIDE */}
           <div className="contact-info">
 
             <span className="contact-label">
@@ -111,7 +112,11 @@ const Contact = () => {
 
             <div className="contact-info-list">
 
-              <div className="contact-info-item">
+              {/* EMAIL */}
+              <a
+                href="mailto:support@traveldestination.com"
+                className="contact-info-item"
+              >
                 <div className="contact-icon">
                   <Mail size={21} />
                 </div>
@@ -120,9 +125,13 @@ const Contact = () => {
                   <h4>Email</h4>
                   <p>support@traveldestination.com</p>
                 </div>
-              </div>
+              </a>
 
-              <div className="contact-info-item">
+              {/* PHONE */}
+              <a
+                href="tel:+919876543210"
+                className="contact-info-item"
+              >
                 <div className="contact-icon">
                   <Phone size={21} />
                 </div>
@@ -131,25 +140,29 @@ const Contact = () => {
                   <h4>Phone</h4>
                   <p>+91 98765 43210</p>
                 </div>
-              </div>
+              </a>
 
-              <div className="contact-info-item">
+              {/* LOCATION */}
+              <a
+                href="https://www.google.com/maps/search/?api=1&query=Nagpur,Maharashtra,India"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="contact-info-item"
+              >
                 <div className="contact-icon">
                   <MapPin size={21} />
                 </div>
 
                 <div>
                   <h4>Location</h4>
-                  <p>Maharashtra, India</p>
+                  <p>Nagpur, Maharashtra, India</p>
                 </div>
-              </div>
+              </a>
 
             </div>
-
           </div>
 
-          {/* FORM */}
-
+          {/* RIGHT SIDE - FORM */}
           <div className="contact-form-card">
 
             <h3>Send Us a Message</h3>
@@ -192,6 +205,7 @@ const Contact = () => {
               </div>
 
               <div className="contact-form-group">
+
                 <label>Subject</label>
 
                 <input
@@ -202,9 +216,11 @@ const Contact = () => {
                   placeholder="Enter subject"
                   required
                 />
+
               </div>
 
               <div className="contact-form-group">
+
                 <label>Message</label>
 
                 <textarea
@@ -215,6 +231,7 @@ const Contact = () => {
                   rows="6"
                   required
                 ></textarea>
+
               </div>
 
               <button
@@ -234,11 +251,12 @@ const Contact = () => {
           </div>
 
         </section>
-
       </main>
     </>
   );
 };
 
 export default Contact;
+
+
 

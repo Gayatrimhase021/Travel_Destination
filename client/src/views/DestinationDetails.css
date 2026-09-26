@@ -340,6 +340,15 @@
   color: #168a6b;
   text-decoration: none;
 }
+.details-wishlist.active {
+  background: #2563eb;
+  color: white;
+  border-color: #2563eb;
+}
+
+.details-wishlist.active:hover {
+  background: #1d4ed8;
+}
 
 
 /* RESPONSIVE */
