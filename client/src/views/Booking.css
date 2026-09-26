@@ -1,0 +1,146 @@
+.booking-page {
+  min-height: calc(100vh - 70px);
+  background: #f7f9fc;
+  padding: 60px 20px;
+}
+
+.booking-container {
+  max-width: 1000px;
+  margin: auto;
+}
+
+.booking-back {
+  display: inline-flex;
+  align-items: center;
+  gap: 7px;
+  color: #0f766e;
+  text-decoration: none;
+  font-size: 14px;
+  font-weight: 600;
+  margin-bottom: 30px;
+}
+
+.booking-wrapper {
+  background: white;
+  border-radius: 18px;
+  overflow: hidden;
+  box-shadow: 0 12px 35px rgba(15, 23, 42, 0.08);
+}
+
+.booking-info-section {
+  background: #0f766e;
+  color: white;
+  padding: 45px;
+}
+
+.booking-label {
+  font-size: 12px;
+  letter-spacing: 2px;
+  font-weight: 700;
+}
+
+.booking-info-section h1 {
+  font-size: 38px;
+  margin: 10px 0;
+}
+
+.booking-info-section p {
+  max-width: 600px;
+  color: #dff5f2;
+  line-height: 1.7;
+}
+
+.booking-form {
+  padding: 45px;
+  max-width: 650px;
+}
+
+.form-group {
+  margin-bottom: 25px;
+}
+
+.form-group label {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  color: #334155;
+  font-size: 14px;
+  font-weight: 600;
+  margin-bottom: 9px;
+}
+
+.form-group label svg {
+  color: #0f766e;
+}
+
+.form-group input {
+  width: 100%;
+  box-sizing: border-box;
+  border: 1px solid #dbe1e8;
+  border-radius: 9px;
+  padding: 14px;
+  font-size: 15px;
+  outline: none;
+}
+
+.form-group input:focus {
+  border-color: #0f766e;
+}
+
+.booking-summary {
+  background: #f1f7f6;
+  border-radius: 10px;
+  padding: 20px;
+  margin: 10px 0 25px;
+}
+
+.booking-summary h3 {
+  margin: 0 0 8px;
+  color: #172033;
+}
+
+.booking-summary p {
+  color: #64748b;
+  font-size: 14px;
+  line-height: 1.5;
+}
+
+.booking-summary strong {
+  color: #0f766e;
+}
+
+.confirm-booking-btn {
+  width: 100%;
+  border: none;
+  background: #0f766e;
+  color: white;
+  padding: 15px;
+  border-radius: 9px;
+  font-size: 15px;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+.confirm-booking-btn:hover {
+  background: #115e59;
+}
+
+.confirm-booking-btn:disabled {
+  opacity: 0.7;
+  cursor: not-allowed;
+}
+
+@media (max-width: 600px) {
+  .booking-page {
+    padding: 35px 15px;
+  }
+
+  .booking-info-section,
+  .booking-form {
+    padding: 30px 22px;
+  }
+
+  .booking-info-section h1 {
+    font-size: 30px;
+  }
+}

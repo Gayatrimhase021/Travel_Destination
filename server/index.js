@@ -6,7 +6,9 @@ import dotenv from "dotenv";
 import userRoutes from "./routes/user.js";
 import destinationRoutes from "./routes/destination.js";
 import tourRoutes from "./routes/tour.js";
-
+import bookingRoutes from "./routes/booking.js";
+import reviewRoutes from "./routes/review.js";
+import contactRoutes from "./routes/contact.js";
 dotenv.config();
 
 const app = express();
@@ -24,7 +26,9 @@ app.get("/", (req, res) => {
 app.use("/api/user", userRoutes);
 app.use("/api/destinations", destinationRoutes);
 app.use("/api/tours", tourRoutes);
-
+app.use("/api/bookings", bookingRoutes);
+app.use("/api/reviews", reviewRoutes);
+app.use("/api/contact", contactRoutes);
 const PORT = process.env.PORT || 5000;
 
 mongoose

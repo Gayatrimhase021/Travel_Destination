@@ -1,9 +1,16 @@
+/* ========================================
+   TOUR DETAILS PAGE
+======================================== */
+
 .tour-details-page {
   background: #f7f9fc;
   min-height: 100vh;
 }
 
-/* Hero */
+
+/* ========================================
+   HERO SECTION
+======================================== */
 
 .tour-details-hero {
   height: 520px;
@@ -48,17 +55,23 @@
   font-size: 14px;
 }
 
+.back-to-tours:hover {
+  text-decoration: underline;
+}
+
 .tour-details-hero-content > span {
   display: block;
   font-size: 13px;
   letter-spacing: 2px;
   font-weight: 700;
   margin-bottom: 12px;
+  text-transform: uppercase;
 }
 
 .tour-details-hero-content h1 {
   font-size: 52px;
   margin: 0 0 20px;
+  line-height: 1.15;
 }
 
 .tour-meta {
@@ -73,7 +86,10 @@
   font-size: 15px;
 }
 
-/* Main Content */
+
+/* ========================================
+   MAIN CONTENT
+======================================== */
 
 .tour-details-content {
   max-width: 1200px;
@@ -93,7 +109,13 @@
   font-size: 12px;
   font-weight: 700;
   letter-spacing: 2px;
+  text-transform: uppercase;
 }
+
+
+/* ========================================
+   DESCRIPTION
+======================================== */
 
 .tour-description h2,
 .tour-highlights h2,
@@ -107,9 +129,13 @@
   color: #64748b;
   font-size: 16px;
   line-height: 1.8;
+  margin: 0;
 }
 
-/* Highlights */
+
+/* ========================================
+   HIGHLIGHTS
+======================================== */
 
 .tour-highlights {
   margin-top: 45px;
@@ -134,9 +160,13 @@
 
 .highlight-item svg {
   color: #0f766e;
+  flex-shrink: 0;
 }
 
-/* Inclusion */
+
+/* ========================================
+   INCLUSIONS / EXCLUSIONS
+======================================== */
 
 .tour-inclusions {
   margin-top: 45px;
@@ -149,6 +179,7 @@
   background: white;
   padding: 25px;
   border-radius: 14px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.04);
 }
 
 .inclusion-column h2 {
@@ -175,7 +206,10 @@
   color: #dc2626;
 }
 
-/* Booking Card */
+
+/* ========================================
+   BOOKING CARD
+======================================== */
 
 .tour-booking-card {
   background: white;
@@ -186,6 +220,11 @@
   top: 100px;
   box-shadow: 0 10px 30px rgba(15, 23, 42, 0.09);
 }
+
+
+/* ========================================
+   BOOKING PRICE
+======================================== */
 
 .booking-price {
   padding-bottom: 22px;
@@ -209,7 +248,10 @@
   margin-left: 6px;
 }
 
-/* Booking Info */
+
+/* ========================================
+   BOOKING INFO
+======================================== */
 
 .booking-info {
   padding: 22px 0;
@@ -221,6 +263,10 @@
   gap: 12px;
   margin-bottom: 18px;
   color: #0f766e;
+}
+
+.booking-info div:last-child {
+  margin-bottom: 0;
 }
 
 .booking-info span {
@@ -235,7 +281,10 @@
   margin-bottom: 3px;
 }
 
-/* Button */
+
+/* ========================================
+   BOOK TOUR BUTTON
+======================================== */
 
 .book-tour-btn {
   width: 100%;
@@ -247,6 +296,7 @@
   font-size: 15px;
   font-weight: 700;
   cursor: pointer;
+  transition: background 0.2s ease;
 }
 
 .book-tour-btn:hover {
@@ -260,7 +310,259 @@
   margin: 15px 0 0;
 }
 
-/* Loading */
+
+/* ========================================
+   REVIEWS SECTION
+======================================== */
+
+.tour-reviews {
+  margin-top: 50px;
+  padding-top: 40px;
+  border-top: 1px solid #e5e7eb;
+}
+
+.reviews-header {
+  margin-bottom: 25px;
+}
+
+.reviews-header h2 {
+  margin: 8px 0;
+  font-size: 30px;
+  color: #172033;
+}
+
+.reviews-header p {
+  color: #6b7280;
+  margin: 0;
+}
+
+
+/* ========================================
+   ADD REVIEW CARD
+======================================== */
+
+.add-review-card {
+  background: #f8fafc;
+  border: 1px solid #e5e7eb;
+  border-radius: 16px;
+  padding: 25px;
+  margin-bottom: 30px;
+}
+
+.add-review-card h3 {
+  margin: 0 0 20px;
+  font-size: 21px;
+  color: #172033;
+}
+
+
+/* ========================================
+   RATING INPUT
+======================================== */
+
+.rating-input {
+  margin-bottom: 20px;
+}
+
+.rating-input label,
+.review-input label {
+  display: block;
+  font-weight: 600;
+  margin-bottom: 10px;
+  color: #374151;
+}
+
+.star-buttons {
+  display: flex;
+  gap: 5px;
+}
+
+.star-btn {
+  border: none;
+  background: transparent;
+  cursor: pointer;
+  padding: 3px;
+  color: #cbd5e1;
+  transition: color 0.2s ease;
+}
+
+.star-btn:hover {
+  color: #f59e0b;
+}
+
+.star-btn.active {
+  color: #f59e0b;
+}
+
+
+/* ========================================
+   REVIEW INPUT
+======================================== */
+
+.review-input {
+  margin-bottom: 18px;
+}
+
+.review-input textarea {
+  width: 100%;
+  min-height: 120px;
+  border: 1px solid #d1d5db;
+  border-radius: 10px;
+  padding: 13px;
+  font-size: 15px;
+  resize: vertical;
+  outline: none;
+  font-family: inherit;
+  box-sizing: border-box;
+  background: white;
+}
+
+.review-input textarea:focus {
+  border-color: #0f766e;
+  box-shadow: 0 0 0 2px rgba(15, 118, 110, 0.08);
+}
+
+
+/* ========================================
+   SUBMIT REVIEW BUTTON
+======================================== */
+
+.submit-review-btn {
+  border: none;
+  border-radius: 9px;
+  padding: 12px 22px;
+  background: #0f766e;
+  color: white;
+  font-size: 15px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background 0.2s ease;
+}
+
+.submit-review-btn:hover {
+  background: #115e59;
+}
+
+.submit-review-btn:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+
+/* ========================================
+   REVIEW LIST
+======================================== */
+
+.review-list {
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+}
+
+.review-card {
+  border: 1px solid #e5e7eb;
+  border-radius: 15px;
+  padding: 22px;
+  background: white;
+  box-shadow: 0 3px 12px rgba(0, 0, 0, 0.03);
+}
+
+.review-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 15px;
+}
+
+
+/* ========================================
+   REVIEW USER
+======================================== */
+
+.review-user {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.review-avatar {
+  width: 42px;
+  height: 42px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #0f766e;
+  color: white;
+  font-weight: 700;
+  flex-shrink: 0;
+}
+
+.review-user h4 {
+  margin: 0 0 3px;
+  font-size: 16px;
+  color: #374151;
+}
+
+.review-user span {
+  font-size: 13px;
+  color: #6b7280;
+}
+
+
+/* ========================================
+   REVIEW RATING
+======================================== */
+
+.review-rating {
+  display: flex;
+  gap: 2px;
+  color: #f59e0b;
+}
+
+
+/* ========================================
+   REVIEW COMMENT
+======================================== */
+
+.review-comment {
+  margin: 18px 0 0;
+  color: #4b5563;
+  line-height: 1.7;
+  font-size: 15px;
+}
+
+
+/* ========================================
+   NO REVIEWS
+======================================== */
+
+.no-reviews {
+  text-align: center;
+  border: 1px dashed #d1d5db;
+  border-radius: 15px;
+  padding: 40px 20px;
+  color: #6b7280;
+  background: white;
+}
+
+.no-reviews svg {
+  color: #f59e0b;
+}
+
+.no-reviews h3 {
+  color: #374151;
+  margin: 12px 0 5px;
+}
+
+.no-reviews p {
+  margin: 0;
+}
+
+
+/* ========================================
+   LOADING
+======================================== */
 
 .tour-loading,
 .tour-not-found {
@@ -282,11 +584,20 @@
   text-decoration: none;
 }
 
-/* Responsive */
+.tour-not-found a:hover {
+  text-decoration: underline;
+}
+
+
+/* ========================================
+   TABLET RESPONSIVE
+======================================== */
 
 @media (max-width: 900px) {
+
   .tour-details-content {
     grid-template-columns: 1fr;
+    gap: 40px;
   }
 
   .tour-booking-card {
@@ -296,28 +607,170 @@
   .tour-details-hero-content h1 {
     font-size: 42px;
   }
+
+  .tour-inclusions {
+    gap: 25px;
+  }
 }
 
+
+/* ========================================
+   MOBILE RESPONSIVE
+======================================== */
+
 @media (max-width: 600px) {
+
+  /* Hero */
+
   .tour-details-hero {
     height: 450px;
+  }
+
+  .tour-details-hero-content {
+    bottom: 40px;
+    padding: 0 18px;
   }
 
   .tour-details-hero-content h1 {
     font-size: 34px;
   }
 
+  .tour-details-hero-content > span {
+    font-size: 11px;
+  }
+
+  .back-to-tours {
+    margin-bottom: 18px;
+  }
+
+
+  /* Meta */
+
   .tour-meta {
     flex-direction: column;
     gap: 10px;
   }
 
-  .highlight-list,
-  .tour-inclusions {
-    grid-template-columns: 1fr;
+  .tour-meta div {
+    font-size: 14px;
   }
+
+
+  /* Main Content */
 
   .tour-details-content {
     padding: 45px 18px;
+    gap: 35px;
+  }
+
+
+  /* Description */
+
+  .tour-description h2,
+  .tour-highlights h2 {
+    font-size: 24px;
+  }
+
+  .tour-description p {
+    font-size: 15px;
+  }
+
+
+  /* Highlights */
+
+  .highlight-list {
+    grid-template-columns: 1fr;
+  }
+
+
+  /* Inclusions */
+
+  .tour-inclusions {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+
+  .inclusion-column {
+    padding: 20px;
+  }
+
+
+  /* Booking Card */
+
+  .tour-booking-card {
+    padding: 22px;
+  }
+
+  .booking-price strong {
+    font-size: 28px;
+  }
+
+
+  /* Reviews */
+
+  .tour-reviews {
+    margin-top: 35px;
+    padding-top: 30px;
+  }
+
+  .reviews-header h2 {
+    font-size: 25px;
+  }
+
+  .add-review-card {
+    padding: 18px;
+  }
+
+  .review-top {
+    align-items: flex-start;
+    flex-direction: column;
+  }
+
+  .review-rating {
+    margin-left: 54px;
+  }
+
+  .review-card {
+    padding: 18px;
+  }
+
+  .review-comment {
+    font-size: 14px;
+  }
+}
+
+
+/* ========================================
+   SMALL MOBILE
+======================================== */
+
+@media (max-width: 400px) {
+
+  .tour-details-hero {
+    height: 420px;
+  }
+
+  .tour-details-hero-content h1 {
+    font-size: 29px;
+  }
+
+  .tour-details-content {
+    padding: 35px 15px;
+  }
+
+  .tour-booking-card {
+    padding: 18px;
+  }
+
+  .add-review-card {
+    padding: 15px;
+  }
+
+  .review-card {
+    padding: 15px;
+  }
+
+  .submit-review-btn {
+    width: 100%;
   }
 }
