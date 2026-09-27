@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
 import {
   Search,
@@ -16,6 +16,38 @@ const Destinations = () => {
   const [search, setSearch] = useState("");
   const [category, setCategory] = useState("All");
 
+  const [wishlist, setWishlist] = useState([]);
+
+  useEffect(() => {
+    const savedWishlist =
+      JSON.parse(localStorage.getItem("wishlist")) || [];
+
+    setWishlist(savedWishlist);
+  }, []);
+
+  const toggleWishlist = (destination) => {
+    const alreadyAdded = wishlist.some(
+      (item) => item.id === destination.id
+    );
+
+    let updatedWishlist;
+
+    if (alreadyAdded) {
+      updatedWishlist = wishlist.filter(
+        (item) => item.id !== destination.id
+      );
+    } else {
+      updatedWishlist = [...wishlist, destination];
+    }
+
+    setWishlist(updatedWishlist);
+
+    localStorage.setItem(
+      "wishlist",
+      JSON.stringify(updatedWishlist)
+    );
+  };
+
   const destinations = [
     {
       id: 1,
@@ -23,7 +55,7 @@ const Destinations = () => {
       location: "Goa, India",
       category: "Beach",
       image:
-       "https://images.unsplash.com/photo-1512343879784-a960bf40e7f2?auto=format&fit=crop&w=1200&q=80",
+        "https://images.unsplash.com/photo-1512343879784-a960bf40e7f2?auto=format&fit=crop&w=1200&q=80",
       rating: 4.8,
       reviews: 245,
       price: 6999
@@ -250,12 +282,22 @@ const Destinations = () => {
                     </span>
 
                     <button
-                      className="destination-heart"
+                      className={`destination-heart ${wishlist.some((item) => item.id === destination.id)
+                          ? "wishlist-active"
+                          : ""
+                        }`}
+                      onClick={() => toggleWishlist(destination)}
                       aria-label="Add to wishlist"
                     >
-                      <Heart size={18} />
+                      <Heart
+                        size={18}
+                        fill={
+                          wishlist.some((item) => item.id === destination.id)
+                            ? "currentColor"
+                            : "none"
+                        }
+                      />
                     </button>
-
                     <div className="destination-card-location">
 
                       <MapPin size={15} />

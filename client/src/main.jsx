@@ -13,9 +13,11 @@ import TourDetails from "./views/TourDetails";
 import Booking from "./views/Booking";
 import MyBookings from "./views/MyBookings";
 import Contact from "./views/Contact";
-import About from "./views/About";
-
+import About from "./views/About"; 
+import Wishlist from "./views/Wishlist";
+import TripPlanner from "./views/tripPlanner";
 import "./index.css";
+
 
 ReactDOM.createRoot(document.getElementById("root")).render(
   <React.StrictMode>
@@ -58,6 +60,10 @@ ReactDOM.createRoot(document.getElementById("root")).render(
           path="/contact"
           element={<Contact />}
         />
+          <Route
+        path="/about"
+        element={<About />}
+        />
 
         <Route
           path="/login"
@@ -70,9 +76,13 @@ ReactDOM.createRoot(document.getElementById("root")).render(
         />
 
         <Route
-        path="/about"
-        element={<About />}
-        />
+         path="/wishlist" 
+         element={<Wishlist />} />
+
+         <Route
+         path="/trip-planner"
+         element={<TripPlanner />}
+         />
 
       </Routes>
     </BrowserRouter>

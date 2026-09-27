@@ -425,6 +425,11 @@
   color: #777;
 }
 
+.destination-heart.wishlist-active {
+  color: #ef4444;
+  background: #fff1f2;
+}
+
 /* ================= RESPONSIVE ================= */
 
 @media (max-width: 1000px) {
