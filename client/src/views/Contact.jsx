@@ -8,7 +8,9 @@ import {
 } from "lucide-react";
 
 import Navbar from "../components/Navbar";
+import footer from "../components/Footer"
 import "./Contact.css";
+import Footer from "../components/Footer";
 
 const Contact = () => {
   const [formData, setFormData] = useState({
@@ -251,6 +253,8 @@ const Contact = () => {
           </div>
 
         </section>
+
+        <Footer />
       </main>
     </>
   );

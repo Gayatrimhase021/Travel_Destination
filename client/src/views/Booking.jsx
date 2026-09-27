@@ -4,6 +4,7 @@ import { CalendarDays, Users, ArrowLeft } from "lucide-react";
 import axios from "axios";
 
 import Navbar from "../components/Navbar";
+import footer from "../components/Footer"
 import "./Booking.css";
 
 const Booking = () => {
@@ -159,6 +160,7 @@ const Booking = () => {
 
           </div>
         </div>
+        <Footer />
       </main>
     </>
   );

@@ -10,6 +10,7 @@ import {
 } from "lucide-react";
 
 import Navbar from "../components/Navbar";
+import footer from "../components/Footer"
 import "./TripPlanner.css";
 
 const TripPlanner = () => {
@@ -511,7 +512,7 @@ const TripPlanner = () => {
           )}
 
         </section>
-
+             <Footer />
       </main>
     </>
   );

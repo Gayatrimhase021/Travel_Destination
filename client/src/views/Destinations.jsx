@@ -10,6 +10,7 @@ import {
 } from "lucide-react";
 
 import Navbar from "../components/Navbar";
+import footer from "../components/Footer"
 import "./Destinations.css";
 
 const Destinations = () => {
@@ -384,7 +385,7 @@ const Destinations = () => {
           )}
 
         </section>
-
+             <Footer />
       </main>
     </>
   );

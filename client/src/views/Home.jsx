@@ -17,7 +17,9 @@ import {
 } from "lucide-react";
 
 import Navbar from "../components/Navbar";
+import Footer from "../components/Footer";
 import "./Home.css";
+
 
 const Home = () => {
   const [search, setSearch] = useState("");
@@ -503,7 +505,7 @@ const Home = () => {
           </div>
 
         </section>
-
+          <Footer />
       </main>
     </>
   );

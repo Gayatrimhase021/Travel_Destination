@@ -10,7 +10,10 @@ import {
 } from "lucide-react";
 
 import Navbar from "../components/Navbar";
+import Footer from "../components/Footer"
+
 import "./Wishlist.css";
+
 
 const Wishlist = () => {
   const [wishlist, setWishlist] = useState([]);
@@ -240,7 +243,7 @@ const Wishlist = () => {
           )}
 
         </section>
-
+         <Footer />
       </main>
     </>
   );

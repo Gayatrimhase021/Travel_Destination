@@ -9,6 +9,7 @@ import {
 import axios from "axios";
 
 import Navbar from "../components/Navbar";
+import footer from "../components/Footer"
 import "./MyBookings.css";
 
 const MyBookings = () => {
@@ -195,6 +196,8 @@ const MyBookings = () => {
           )}
 
         </div>
+
+        <Footer />
       </main>
     </>
   );

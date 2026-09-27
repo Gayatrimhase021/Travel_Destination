@@ -1,4 +1,5 @@
 import Navbar from "../components/Navbar";
+import footer from "../components/Footer"
 import "./About.css";
 
 const About = () => {
@@ -265,7 +266,7 @@ const About = () => {
           </div>
 
         </section>
-
+           <Footer />
       </main>
     </>
   );

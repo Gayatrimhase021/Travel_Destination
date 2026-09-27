@@ -12,6 +12,7 @@ import {
 } from "lucide-react";
 
 import Navbar from "../components/Navbar";
+import footer from "../components/Footer"
 import "./TourDetails.css";
 
 const TourDetails = () => {
@@ -568,7 +569,7 @@ const TourDetails = () => {
           </aside>
 
         </section>
-
+            <Footer/>
       </main>
     </>
   );
