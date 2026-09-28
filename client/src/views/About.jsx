@@ -1,6 +1,7 @@
 import Navbar from "../components/Navbar";
-import footer from "../components/Footer"
+import footer from "../components/Footer";
 import "./About.css";
+import Footer from "../components/Footer";
 
 const About = () => {
   const features = [

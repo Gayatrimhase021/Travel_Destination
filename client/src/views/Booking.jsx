@@ -4,8 +4,9 @@ import { CalendarDays, Users, ArrowLeft } from "lucide-react";
 import axios from "axios";
 
 import Navbar from "../components/Navbar";
-import footer from "../components/Footer"
+import footer from "../components/Footer";
 import "./Booking.css";
+import Footer from "../components/Footer";
 
 const Booking = () => {
   const { id } = useParams();
@@ -160,7 +161,7 @@ const Booking = () => {
 
           </div>
         </div>
-        <Footer />
+        < Footer/>
       </main>
     </>
   );

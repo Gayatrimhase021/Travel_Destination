@@ -10,8 +10,9 @@ import {
 } from "lucide-react";
 
 import Navbar from "../components/Navbar";
-import footer from "../components/Footer"
+import footer from "../components/Footer";
 import "./TripPlanner.css";
+import Footer from "../components/Footer";
 
 const TripPlanner = () => {
   const [destination, setDestination] = useState("");
@@ -512,7 +513,7 @@ const TripPlanner = () => {
           )}
 
         </section>
-             <Footer />
+            <Footer />
       </main>
     </>
   );

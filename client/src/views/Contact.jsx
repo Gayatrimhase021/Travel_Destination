@@ -8,7 +8,7 @@ import {
 } from "lucide-react";
 
 import Navbar from "../components/Navbar";
-import footer from "../components/Footer"
+import footer from "../components/Footer";
 import "./Contact.css";
 import Footer from "../components/Footer";
 

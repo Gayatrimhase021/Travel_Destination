@@ -9,8 +9,9 @@ import {
 } from "lucide-react";
 
 import Navbar from "../components/Navbar";
-import footer from "../components/Footer"
+import footer from "../components/Footer";
 import "./Tours.css";
+import Footer from "../components/Footer";
 
 const Tours = () => {
   const [tours, setTours] = useState([]);
@@ -154,7 +155,7 @@ const Tours = () => {
             </div>
           )}
         </section>
-         <Footer />
+        <Footer />
 
       </main>
     </>

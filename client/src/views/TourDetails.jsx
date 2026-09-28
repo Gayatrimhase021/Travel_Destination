@@ -12,8 +12,9 @@ import {
 } from "lucide-react";
 
 import Navbar from "../components/Navbar";
-import footer from "../components/Footer"
+import footer from "../components/Footer";
 import "./TourDetails.css";
+import Footer from "../components/Footer";
 
 const TourDetails = () => {
   const { id } = useParams();
@@ -569,7 +570,7 @@ const TourDetails = () => {
           </aside>
 
         </section>
-            <Footer/>
+            <Footer />
       </main>
     </>
   );

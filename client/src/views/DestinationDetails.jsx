@@ -11,8 +11,9 @@ import {
 } from "lucide-react";
 
 import Navbar from "../components/Navbar";
-import footer from "../components/Footer"
+import footer from "../components/Footer";
 import "./DestinationDetails.css";
+import Footer from "../components/Footer";
 
 const destinations = [
   {
@@ -455,7 +456,7 @@ const DestinationDetails = () => {
           </aside>
 
         </section>
-           <Footer />
+           <Footer/>
       </main>
     </>
   );

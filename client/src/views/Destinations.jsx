@@ -10,8 +10,9 @@ import {
 } from "lucide-react";
 
 import Navbar from "../components/Navbar";
-import footer from "../components/Footer"
+import footer from "../components/Footer";
 import "./Destinations.css";
+import Footer from "../components/Footer";
 
 const Destinations = () => {
   const [search, setSearch] = useState("");
@@ -385,8 +386,9 @@ const Destinations = () => {
           )}
 
         </section>
-             <Footer />
+          < Footer/>
       </main>
+    
     </>
   );
 };

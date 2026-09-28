@@ -9,8 +9,9 @@ import {
 import axios from "axios";
 
 import Navbar from "../components/Navbar";
-import footer from "../components/Footer"
+import footer from "../components/Footer";
 import "./MyBookings.css";
+import Footer from "../components/Footer";
 
 const MyBookings = () => {
   const [bookings, setBookings] = useState([]);
