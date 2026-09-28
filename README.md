@@ -20,7 +20,7 @@ https://github.com/Gayatrimhase021/Travel_Destination
 
 ### Destinations
 
-![Destinations Page](./assets/destinations.png)
+![Destinations Page](./client/src/assets/destinations.png)
 
 ### Tours
 
