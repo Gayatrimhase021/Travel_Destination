@@ -75,27 +75,6 @@ The main objective of TravelDestination is to provide a centralized platform whe
 - GitHub
 - Render
 
-## Project Structure
 
-```text
-Travel_Destination
-│
-├── client
-│   ├── src
-│   │   ├── assets
-│   │   ├── components
-│   │   ├── views
-│   │   ├── main.jsx
-│   │   └── index.css
-│   │
-│   └── package.json
-│
-├── server
-│   ├── controllers
-│   ├── models
-│   ├── routes
-│   ├── index.js
-│   └── package.json
-│
-├── .gitignore
-└── README.md
+
+
