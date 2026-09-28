@@ -62,7 +62,6 @@ The main objective of TravelDestination is to provide a centralized platform whe
 
 - Node.js
 - Express.js
-- REST API
 - JWT Authentication
 
 ### Database
