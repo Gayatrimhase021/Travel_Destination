@@ -16,7 +16,7 @@ https://github.com/Gayatrimhase021/Travel_Destination
 
 ### Home
 
-![Home Page](./assets/home.png)
+![Home Page](./client/src/assets/home.png)
 
 ### Destinations
 
@@ -24,7 +24,7 @@ https://github.com/Gayatrimhase021/Travel_Destination
 
 ### Tours
 
-![Tours Page](./assets/tours.png)
+![Tours Page](./client/src/assets/tours.png)
 
 ## Project Objective
 
